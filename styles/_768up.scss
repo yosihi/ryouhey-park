@@ -1,0 +1,111 @@
+
+body {
+  font-size: 20px;
+}
+
+.header {
+  height: 100px;
+  
+  &__flex {
+    justify-content: end;
+
+    & .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 3%;
+    }
+  
+    & h1{
+      width: 25%;
+      font-size: 1.3em;
+    }
+  }
+  & .bg-menu {
+    display: none;
+  }
+
+  & .pc-menu {
+    display: block;
+    width: 65%;
+    margin: 0;
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      padding: 0;
+      margin: 0;
+      
+      & li {
+        margin-right: 5%;
+
+        & .mark {
+          text-decoration: none;
+          color: $cmain;
+          font-size: 24px;
+          &:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-slider {
+  &__inner {
+    padding-top: 100px !important;
+    & .swiper {
+      & .swiper-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+
+  .main {
+    width: 90%;
+    margin: 0 auto;
+
+    & .flex {
+      flex-direction: row;
+      align-items: center;
+  
+      & .visible {
+        width: 50%;
+      }
+      
+      & .text {
+        width: 50%;
+        margin-left: 10%;
+      }
+    }
+  }
+
+  & .inclusive {
+    & .flex {
+      flex-direction: row-reverse;
+      & .text {
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+.footer {
+  & h1 {
+    margin-bottom: 50px;
+  }
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    & li {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}

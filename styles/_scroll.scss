@@ -1,0 +1,23 @@
+.visible {
+  overflow: hidden;
+  
+  & .img-zoom {
+    transform: scale(1.2);
+    transition: transform 0.7s ease-in-out;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.fade-in {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.inview {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
